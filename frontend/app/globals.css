@@ -1,6 +1,9 @@
 @import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
+@config "../tailwind.config.ts";
+
+/* Essas duas linhas abaixo são para garantir as animações e estilos do Shadcn no v4 */
+@plugin "tailwindcss-animate";
+@source "../components";
 
 @custom-variant dark (&:is(.dark *));
 
